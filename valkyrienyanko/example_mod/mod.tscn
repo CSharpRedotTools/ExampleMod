@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwwb8rhdc8xxn"]
+
+[ext_resource type="Script" path="res://valkyrienyanko/example_mod/Mod.cs" id="1_6s45c"]
+
+[node name="Mod" type="Node"]
+script = ExtResource("1_6s45c")
