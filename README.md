@@ -1,3 +1,4 @@
+## What is this?
 This is an example mod for ValksGodotTools/Template.
 
 ## Creating the mod.json
@@ -17,7 +18,7 @@ This is an example mod for ValksGodotTools/Template.
 ## How to Replace Game Assets
 You will need to know the exact path to the asset in the game. In order to find this out the game developer will either need to tell you this or you will need to figure out how to get this information yourself.
 
-In ValksGodotTools/Template, the path to a concept art jpg is `res://Template/Sprites/Concept Art/elk-skull-lodge.jpg`. If you would like to replace this you will need to recreate this exact path with the same file name.
+In ValksGodotTools/Template, the path to a concept art jpg is `res://Template/Sprites/Concept Art/elk-skull-lodge.jpg`. If you would like to replace this you will need to recreate this exact path with the same file name. In this example mod this asset has been replaced with a picture of a cat.
 
 This means you can replace scenes, shaders, models, textures, sound effects, and music. You can import pretty much any kind of asset except for csharp scripts.
 
@@ -41,5 +42,7 @@ public partial class Mod : Node
 }
 ```
 The `_Ready()` and any other functions you add like `_PhysicsProcess()` will be called. This is the entry point to your mod.
+
+So far this example mod only prints "Hello from Example Mod by valkyrienyanko" when the mod is loaded in.
 
 I have yet to figure out how to modify existing scripts but I'd imagine it would be something like `GetTree().Root.GetNode<Player>("PathToPlayer").SetPosition(50, 0);`. I would have to provide a dummy Player class to the mod so you could type out `Player` and `SetPosition(x, y)` with no errors.
