@@ -1,6 +1,9 @@
 ## What is this?
 This is an example mod for ValksGodotTools/Template.
 
+![credits](https://github.com/ValksGodotTools/Template/assets/6277739/91c976bc-bc46-4171-9f76-ef5c0bce75dc)  
+The Example Mod replaces the credits background image with a picture of a cat.
+
 ## Creating the mod.json
 ```json
 {
