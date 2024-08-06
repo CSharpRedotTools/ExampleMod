@@ -40,8 +40,5 @@ public partial class Mod : Node
     }
 }
 ```
-The `_Ready()` and any other functions you add like `_PhysicsProcess()` will be called. This is the entry point to your mod.
-
-So far this example mod only prints "Hello from Example Mod by valkyrienyanko" when the mod is loaded in.
-
-I have yet to figure out how to modify existing scripts but I'd imagine it would be something like `GetTree().Root.GetNode<Player>("PathToPlayer").SetPosition(50, 0);`. I would have to provide a dummy Player class to the mod so you could type out `Player` and `SetPosition(x, y)` with no errors.
+> [!NOTE]
+> The `Mod` node will get added as a child when the mod loads in, so any built-in node functions like `_Ready()` and `_PhysicsProcess()` will act as the entry point to your mod.
