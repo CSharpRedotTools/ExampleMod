@@ -23,7 +23,7 @@ In [ValksGodotTools/Template](https://github.com/ValksGodotTools/Template), a pa
 > [!CAUTION]
 > C# Scripts are the only kind of assets that cannot be replaced
 
-## How to Add Your Own Scripts
+## How to Add Your Own C# Scripts
 Due to the way how assemblies are loaded in ValksGodotTools/Template, all scripts will be need to be in unique locations for each mod. If two scripts are in the same location from two different mods, both mods will fail to load.
 
 Put your scripts in `res://<author>/<id>` where `<author>` and `<id>` are what you set in `mod.json`. Making sure these are the same is very important otherwise your mod will fail to load.
