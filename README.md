@@ -21,7 +21,7 @@ Game assets include things like sounds, pictures, shaders and models. In order t
 In [ValksGodotTools/Template](https://github.com/ValksGodotTools/Template), a path to one of the assets is `res://Template/Sprites/Concept Art/elk-skull-lodge.jpg`. If you would like to replace this you will need to recreate the exact folder structure in this mod. That is create a new folder named `Template` and then create a folder inside that named `Sprites` and then `Concept Art` and finally a image with the same file name and file extension, that is `elk-skull-lodge.jpg`. 
 
 > [!CAUTION]
-> Due to the way .NET is you cannot replace C# scripts.
+> C# Scripts are the only kind of assets that cannot be replaced
 
 ## How to Add Your Own Scripts
 Due to the way how assemblies are loaded in ValksGodotTools/Template, all scripts will be need to be in unique locations for each mod. If two scripts are in the same location from two different mods, both mods will fail to load.
