@@ -1,7 +1,8 @@
 ## What is this?
 This is the example mod for ValksGodotTools/Template. Mods can add and replace assets as well as execute C# scripts.
 
-Every mod needs a `mod.json` file. The `id` should be unique to your mod and only your mod.
+> [!WARNING]
+> Every mod needs a `mod.json` file. The `id` should be unique to your mod and only your mod.
 ```json
 {
     "name": "Example Mod",
