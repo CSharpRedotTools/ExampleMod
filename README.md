@@ -1,6 +1,9 @@
 ## What is this?
 This is the example mod for ValksGodotTools/Template. Mods can add and replace assets as well as execute C# scripts.
 
+> [!CAUTION]
+> In order to execute scripts across several mods properly, [this issue](https://github.com/ValksGodotTools/Template/issues/15) needs to get resolved. In the meantime mods adding scripts to mods should be avoided.
+
 > [!WARNING]
 > Every mod needs a `mod.json` file. The `id` should be unique to your mod and only your mod.
 ```json
@@ -43,3 +46,11 @@ public partial class Mod : Node
 ```
 > [!NOTE]
 > The `Mod` node will get added as a child when the mod loads in, so any built-in node functions like `_Ready()` and `_PhysicsProcess()` will act as the entry point to your mod.
+
+## Exporting the Mod
+1. Export the mod via `Project > Export...`
+2. Create a new folder for your mod. The mod should contain at least 3 files.
+    - `mod.json` *(the file you created earlier)*
+    - `mod.pck` *(generated from the export)*
+    - `Mod.dll` *(generated inside `.godot\mono\temp\bin\Debug`)*
+3. Put this folder inside the `Mods/` folder of the game
